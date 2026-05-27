@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ruslan Zub - Backend-Focused .NET Developer portfolio"
+    />
+    <title>Ruslan Zub | Backend-Focused .NET Developer</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <nav class="site-nav container" aria-label="Primary navigation">
+      <a class="logo" href="#top" aria-label="Ruslan Zub home">RZ</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#infrastructure">Infra</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <header class="hero container">
+        <div class="reveal">
+          <span class="eyebrow">Backend-Focused .NET Developer</span>
+          <h1>Ruslan Zub</h1>
+          <p class="hero-text">
+            Software Engineering student focused on backend systems, relational
+            databases, REST APIs, and multiplayer synchronization.
+          </p>
+          <div class="hero-stack" aria-label="Primary stack">
+            <span>ASP.NET Core</span>
+            <span>EF Core</span>
+            <span>MySQL</span>
+            <span>Docker</span>
+            <span>JWT Authentication</span>
+            <span>Socket.IO</span>
+            <span>REST APIs</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/ReedSnake" target="_blank" rel="noreferrer">
+              GitHub
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" /></svg>
+            </a>
+            <a class="button" href="https://www.linkedin.com/in/rzub/" target="_blank" rel="noreferrer">
+              LinkedIn
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" /></svg>
+            </a>
+            <a class="button" href="assets/docs/cv.pdf" download="Ruslan_Zub_CV.pdf">
+              Download CV
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Backend profile code preview">
+          <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <pre class="code-preview"><code>public sealed class BackendProfile
+{
+    public string Focus => "Backend systems";
+    public string Database => "Relational modeling";
+    public string Realtime => "Socket.IO sync";
+
+    public Task ShipAsync()
+        => DesignApiContracts()
+            .Then(ModelData())
+            .Then(SynchronizeState());
+}</code></pre>
+        </aside>
+      </header>
+
+      <section id="about" class="section container reveal">
+        <div class="section-head">
+          <span class="eyebrow">Profile</span>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Second-year Software Engineering student at NTU &quot;KhPI&quot; focused on
+            backend development and team-based engineering.
+          </p>
+          <p>
+            Worked with ASP.NET Core, EF Core, MySQL, JWT authentication, REST
+            APIs, Socket.IO communication, Docker, and deployment workflows.
+          </p>
+          <p>
+            Main interests: database relationships, API boundaries, realtime
+            synchronization, and deployment configuration.
+          </p>
+        </div>
+      </section>
+
+      <section id="stack" class="section container reveal">
+        <div class="section-head">
+          <span class="eyebrow">Toolkit</span>
+          <h2>Primary Stack</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="tech-card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" /></svg><span>.NET</span></article>
+          <article class="tech-card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg><span>ASP.NET Core</span></article>
+          <article class="tech-card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 7c0 1.1 3.1 2 7 2s7-.9 7-2-3.1-2-7-2-7 .9-7 2ZM5 7v10c0 1.1 3.1 2 7 2s7-.9 7-2V7" /></svg><span>EF Core</span></article>
+          <article class="tech-card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 7c0 1.1 3.1 2 7 2s7-.9 7-2-3.1-2-7-2-7 .9-7 2ZM5 12c0 1.1 3.1 2 7 2s7-.9 7-2M5 17c0 1.1 3.1 2 7 2s7-.9 7-2" /></svg><span>MySQL</span></article>
+          <article class="tech-card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 15h18M6 11h3v4H6zM9 7h3v4H9zM12 11h3v4h-3zM15 7h3v4h-3zM7 19c3 1 7 1 10-1" /></svg><span>Docker</span></article>
+          <article class="tech-card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.8 3 8.1 7 10 4-1.9 7-5.2 7-10V6zM9 12h6" /></svg><span>JWT Authentication</span></article>
+          <article class="tech-card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12v16H6zM9 8h6M9 12h6M9 16h3" /></svg><span>REST APIs</span></article>
+          <article class="tech-card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h4l3-6 3 12 3-6h1" /></svg><span>Socket.IO</span></article>
+          <article class="tech-card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 7h10v10H7zM7 12H3M17 12h4M12 7V3M12 17v4" /></svg><span>Git</span></article>
+        </div>
+      </section>
+
+      <section id="projects" class="section container reveal">
+        <div class="section-head">
+          <span class="eyebrow">Selected Work</span>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-media screenshot-board edemly-board">
+              <img class="zoomable" src="assets/images/edemly/Calendar.jpg" alt="Edemly calendar screenshot" loading="lazy" tabindex="0" />
+              <img class="zoomable" src="assets/images/edemly/Login.jpg" alt="Edemly login screenshot" loading="lazy" tabindex="0" />
+              <img class="zoomable" src="assets/images/edemly/Chat.jpg" alt="Edemly chat screenshot" loading="lazy" tabindex="0" />
+            </div>
+            <div class="project-body">
+              <div>
+                <h3>Edemly</h3>
+                <p>
+                  Multi-tenant educational and communication platform built with
+                  ASP.NET Core and Entity Framework Core as a team project.
+                </p>
+              </div>
+              <div class="project-detail-grid">
+                <div class="project-detail">
+                  <h4>My Responsibilities</h4>
+                  <p>
+                    Backend structure, database relationships, API integration,
+                    authentication flows, Socket.IO communication, deployment setup,
+                    and team coordination.
+                  </p>
+                </div>
+                <div class="project-detail">
+                  <h4>Architecture &amp; Engineering</h4>
+                  <p>
+                    Modular monolith with tenant-oriented data, separated services,
+                    REST endpoints, JWT auth, and EF Core relational entity
+                    management.
+                  </p>
+                </div>
+                <div class="project-detail">
+                  <h4>Technical Challenges</h4>
+                  <p>
+                    Keeping relational data, auth workflows, progression, inventory,
+                    communication, and multiplayer logic maintainable in one backend.
+                  </p>
+                </div>
+              </div>
+              <ul class="project-points">
+                <li>tenant isolation</li>
+                <li>database relationships</li>
+                <li>API endpoint integration</li>
+                <li>backend/frontend contracts</li>
+                <li>client-server synchronization</li>
+                <li>REST API endpoints</li>
+                <li>JWT authentication</li>
+                <li>user progression</li>
+                <li>collections and inventory</li>
+                <li>ranking systems</li>
+                <li>lobby management</li>
+                <li>multiplayer battle synchronization</li>
+                <li>tenant-based architecture</li>
+                <li>Dockerized environment</li>
+              </ul>
+              <div class="project-stack">
+                <span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>MySQL</span><span>Docker</span><span>JWT</span><span>Socket.IO</span>
+              </div>
+              <a class="button" href="https://github.com/ReedSnake/Edemly" target="_blank" rel="noreferrer">
+                GitHub
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" /></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media screenshot-board nso-board">
+              <img class="zoomable" src="assets/images/nso/Battle%20Arena.png" alt="NSO Broken Reality battle arena screenshot" loading="lazy" tabindex="0" />
+              <img class="zoomable" src="assets/images/nso/Registration.png" alt="NSO Broken Reality registration screenshot" loading="lazy" tabindex="0" />
+              <img class="zoomable" src="assets/images/nso/Store.png" alt="NSO Broken Reality store screenshot" loading="lazy" tabindex="0" />
+            </div>
+            <div class="project-body">
+              <div>
+                <h3>NSO: Broken Reality</h3>
+                <p>
+                  Browser-based multiplayer card game developed in a team sprint,
+                  with a strong focus on server-side game state and realtime
+                  synchronization.
+                </p>
+              </div>
+              <div class="project-detail-grid">
+                <div class="project-detail">
+                  <h4>My Responsibilities</h4>
+                  <p>
+                    Room workflows, battle state updates, Socket.IO events, session
+                    handling, database design, sync debugging, and server-side
+                    action validation.
+                  </p>
+                </div>
+                <div class="project-detail">
+                  <h4>Development Workflow</h4>
+                  <p>
+                    Sprint-based team development with rapid iteration,
+                    collaborative debugging, and feature coordination.
+                  </p>
+                </div>
+                <div class="project-detail">
+                  <h4>Multiplayer Architecture</h4>
+                  <p>
+                    Server-managed lobby rooms, battle sessions, user state,
+                    inventory, progression, and authoritative battle updates.
+                  </p>
+                </div>
+              </div>
+              <ul class="project-points">
+                <li>battle state management</li>
+                <li>room synchronization</li>
+                <li>Socket.IO workflows</li>
+                <li>server-side validation</li>
+                <li>session handling</li>
+                <li>backend game logic</li>
+                <li>database design</li>
+                <li>testing and debugging</li>
+                <li>progression mechanics</li>
+              </ul>
+              <div class="project-stack">
+                <span>JavaScript</span><span>Node.js</span><span>Socket.IO</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+              </div>
+              <a class="button" href="https://github.com/ReedSnake/NSO-Broken-Reality" target="_blank" rel="noreferrer">
+                GitHub
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" /></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-wide">
+            <div class="project-body">
+              <div>
+                <h3>NSO: Architecture Evidence</h3>
+                <p>
+                  Repository diagrams for infrastructure, database design, and
+                  feature boundaries.
+                </p>
+              </div>
+              <div class="diagram-grid">
+                <figure class="diagram-card diagram-card-dark">
+                  <img class="zoomable" src="assets/images/diagrams/NSO/deploymentDiagram.png" alt="NSO deployment diagram" loading="lazy" tabindex="0" />
+                  <figcaption>
+                    <strong>Architecture &amp; Infrastructure</strong>
+                    Render deployment, Aiven database, local/server networking,
+                    and external tunneling flows.
+                  </figcaption>
+                </figure>
+                <figure class="diagram-card">
+                  <img class="zoomable" src="assets/images/diagrams/NSO/databaseDiagram.png" alt="NSO database schema" loading="lazy" tabindex="0" />
+                  <figcaption>
+                    <strong>Database Design</strong>
+                    Relational modeling for users, inventory, battle state,
+                    progression, and synchronization-related entities.
+                  </figcaption>
+                </figure>
+                <figure class="diagram-card diagram-card-dark">
+                  <img class="zoomable" src="assets/images/diagrams/NSO/usecaseDiagram.png" alt="NSO use case diagram" loading="lazy" tabindex="0" />
+                  <figcaption>
+                    <strong>System Features</strong>
+                    Use-case boundaries for accounts, battles, progression,
+                    store interactions, and lobby workflows.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media route-preview" aria-label="SmartTravelPlanner interface preview">
+              <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="route-grid">
+                <aside class="route-sidebar">
+                  <small>Route planner</small>
+                  <strong>Kharkiv - Lviv</strong>
+                  <span>Shortest path: 1,023 km</span>
+                  <span>Nodes visited: 18</span>
+                  <span>Persistence: local files</span>
+                </aside>
+                <div class="map">
+                  <i class="node node-a"></i>
+                  <i class="node node-b"></i>
+                  <i class="node node-c"></i>
+                  <i class="node node-d"></i>
+                  <svg viewBox="0 0 300 180" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M44 132 C86 84 126 106 151 63 S235 42 258 97" />
+                    <path class="secondary-path" d="M78 35 C118 78 172 111 227 146" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div>
+                <h3>SmartTravelPlanner</h3>
+                <p>
+                  Desktop route-planning application developed with WPF and C# as
+                  a team engineering project.
+                </p>
+              </div>
+              <div class="project-detail-grid">
+                <div class="project-detail">
+                  <h4>Engineering Focus</h4>
+                  <p>
+                    Desktop application structure, graph algorithms, route
+                    optimization logic, and collaborative C#/WPF development.
+                  </p>
+                </div>
+                <div class="project-detail">
+                  <h4>Learning Outcome</h4>
+                  <p>
+                    Practical experience with object-oriented design, local
+                    persistence, and algorithmic problem solving.
+                  </p>
+                </div>
+              </div>
+              <ul class="project-points">
+                <li>shortest-path algorithms</li>
+                <li>route optimization logic</li>
+                <li>route calculation workflows</li>
+                <li>desktop UI workflows</li>
+                <li>file persistence</li>
+                <li>object-oriented design</li>
+              </ul>
+              <div class="project-stack">
+                <span>C#</span><span>WPF</span>
+              </div>
+              <a class="button" href="https://github.com/ReedSnake/SmartTravelPlanner" target="_blank" rel="noreferrer">
+                GitHub
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" /></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card project-card-wide">
+            <div class="project-body">
+              <div>
+                <h3>SmartTravelPlanner: Design Diagrams</h3>
+                <p>
+                  Design documentation for desktop workflows, algorithm flow, and
+                  route-planning behavior.
+                </p>
+              </div>
+              <div class="diagram-grid">
+                <figure class="diagram-card">
+                  <img class="zoomable" src="assets/images/diagrams/SmartTravelerPlanner/activity.png" alt="SmartTravelPlanner activity diagram" loading="lazy" tabindex="0" />
+                  <figcaption><strong>Activity Flow</strong> Route planning and decision flow.</figcaption>
+                </figure>
+                <figure class="diagram-card">
+                  <img class="zoomable" src="assets/images/diagrams/SmartTravelerPlanner/sequence.png" alt="SmartTravelPlanner sequence diagram" loading="lazy" tabindex="0" />
+                  <figcaption><strong>Sequence Logic</strong> Interaction between UI actions and route calculation logic.</figcaption>
+                </figure>
+                <figure class="diagram-card">
+                  <img class="zoomable" src="assets/images/diagrams/SmartTravelerPlanner/usecase.jpg" alt="SmartTravelPlanner use case diagram" loading="lazy" tabindex="0" />
+                  <figcaption><strong>Use Cases</strong> Desktop route-planning feature boundaries.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="infrastructure" class="section container reveal">
+        <div class="section-head">
+          <span class="eyebrow">Operations</span>
+          <h2>Infrastructure &amp; Deployment</h2>
+        </div>
+        <div class="technical-grid">
+          <article class="technical-card">
+            <h3>Hosted Environments</h3>
+            <p>
+              Render deployment flows, Aiven-hosted databases, and environment
+              configuration.
+            </p>
+          </article>
+          <article class="technical-card">
+            <h3>Docker Workflows</h3>
+            <p>
+              Dockerized local environments for backend services and database
+              setup.
+            </p>
+          </article>
+          <article class="technical-card">
+            <h3>Networking &amp; Tunneling</h3>
+            <p>
+              Local/server networking and ngrok tunneling for API and realtime
+              integration.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="challenges" class="section container reveal">
+        <div class="section-head">
+          <span class="eyebrow">Problem Solving</span>
+          <h2>Technical Challenges</h2>
+        </div>
+        <div class="interest-grid">
+          <div class="interest-card">Synchronizing multiplayer battle state</div>
+          <div class="interest-card">Organizing relational game data</div>
+          <div class="interest-card">Coordinating frontend/backend contracts</div>
+          <div class="interest-card">Preventing invalid multiplayer actions</div>
+          <div class="interest-card">Managing session persistence</div>
+          <div class="interest-card">Handling API state consistency</div>
+          <div class="interest-card">Configuring deployed environments</div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer container">
+      <strong>Ruslan Zub</strong>
+      <div class="footer-links">
+        <a href="https://github.com/ReedSnake" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/rzub/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:zubruslan51@gmail.com">Email</a>
+        <a href="tel:+380682386262">+380 68 238 6262</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
